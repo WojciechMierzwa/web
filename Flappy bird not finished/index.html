@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Wojciech Mierzwa</title>
+  </head>
+    <style>
+#board{
+ 	width:500px;
+	height:500px;
+	background-color: dodgerblue;
+	margin: 40px auto;
+	overflow: hidden;
+	border:1px solid auto;
+}
+#line{
+	background: url("bricks.jpg");
+	background-size: contain;
+	height:inherit;
+	width: 40px;
+	position: relative;
+	left: 460px;
+	animation: run 2s infinite linear;
+}
+
+#gap{
+	background-color: dodgerblue;
+	height: 120px;
+	width: 40px;
+	position: relative;
+	top: -500px;
+	left: 460px;
+	animation: run 2s infinite linear;
+}
+#ball{
+	width:30px;
+	height:30px;
+	border-radius: 7px;
+	background: url("bird.png");
+	background-size: contain;
+	position: absolute;
+	top: 41px;
+	
+	
+}
+
+
+@keyframes run {
+	0%{
+		left:460px;
+	}
+	100%{
+		left:-40px;
+	}
+}
+
+
+    </style>
+  <script src="index.js" defer></script>
+  <body>
+    <div id="board">
+	<div id="line"></div>
+	<div id="gap"></div>
+	<div id="ball"></div>
+</div>
+  </body>
+</html>
