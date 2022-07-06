@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Wojciech Mierzwa" />
+	<link rel="Stylesheet" href="style_home.css" />
+	<link rel="Shortcut icon" href="wm.ico" />
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('./images/leaf2.jpg');
+    }
+    </style>
+    <p style="background-image: url('./images/leaf2.jpg');">
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="Home.html">Home</a>
+    <a href="Projects.html">Projects</a>
+    <a href="SideScroller.html">Side Scroller</a>
+    <a href="FlappyBird.html">Flappy Bird</a>
+    <a href="WhackAMole.html">Whack A Mole</a>
+  </div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+	
+</p>
+
+</body>
+</html>

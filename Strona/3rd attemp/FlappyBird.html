@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleFlappy.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('./images/leaf2.jpg');
+        }
+        </style>
+        <p style="background-image: url('./images/leaf2.jpg');">
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="Home.html">Home</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Projects.html">Projects</a>
+          <a href="SideScroller.html">Side Scroller</a>
+          <a href="WhackAMole.html">Whack A Mole</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    <canvas id="canvas1"></canvas>
+
+
+    <script src="birds.js"></script>
+    <script src="particles.js"></script>
+    <script src="obstacles.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
