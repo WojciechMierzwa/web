@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wojciech Mierzwa" />
+    <link rel="Stylesheet" href="style1.css" />
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="FrontPage.html">Home</a>
+    <a href="Contact.html">Contact</a>
+    <a href="SideScroller.html">Side Scroller</a>
+    <a href="FlappyBird.html">Flappy Bird</a>
+    <a href="WhackAMole.html">Whack A Mole</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+  
+  <div class="row">
+    <figure class="snip0054">
+        <img src="./Projects/javascript.png" alt="sample24" />
+        <figcaption>
+          <div><i class="ion-play"></i></div>
+          <div>
+            <p>Simple game: Side Scroller</p>
+          </div>
+          <a href="SideScroller.html"></a>
+        </figcaption>
+      </figure>
+      <figure class="snip0054">
+        <img src="./Projects/java.png" alt="sample23" />
+        <figcaption>
+          <div><i class="ion-calendar"></i></div>
+          <div>
+            <p>Managment of Hotel Reservations</p>
+          </div>
+          <a href="#"></a>
+        </figcaption>
+      </figure>
+      <figure class="snip0054">
+        <img src="./Projects/cpp.png" alt="sample22" />
+        <figcaption>
+          <div><i class="ion-compose"></i></div>
+          <div>
+            <p>Simple Program: Study Planner</p>
+          </div>
+          <a href="https://github.com/WojciechMierzwa/University/blob/main/POP_2019_12_10_projekt_1_Mierzwa_Wojciech_AIR_3_176824.cpp"></a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="snip0054">
+          <img src="./Projects/java.png"sample24" />
+          <figcaption>
+            <div><i class="ion-gear-a"></i></div>
+            <div>
+              <p>Simulator of Robots Arm</p>
+            </div>
+            <a href="#"></a>
+          </figcaption>
+        </figure>
+        <figure class="snip0054">
+          <img src="./Projects/javascript.png" alt="sample23" />
+          <figcaption>
+            <div><i class="ion-cloud"></i></div>
+            <div>
+              <p>Simple game: Flappy Bird</p>
+            </div>
+            <a href="FlappyBird.html"></a>
+          </figcaption>
+        </figure>
+        <figure class="snip0054">
+          <img src="./Projects/cpp.png" alt="sample22" />
+          <figcaption>
+            <div><i class="ion-arrow-up-a"></i></div>
+            <div>
+              <p>Lift Simulator</p>
+            </div>
+            <a href="#"></a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="row">
+    <figure class="snip0054">
+        <img src="./Projects/cpp.png" alt="sample24" />
+        <figcaption>
+          <div><i class="ion-eye"></i></div>
+          <div>
+            <p>Image Filter</p>
+          </div>
+          <a href="#"></a>
+        </figcaption>
+      </figure>
+      <figure class="snip0054">
+        <img src="./Projects/python.png" alt="sample23" />
+        <figcaption>
+          <div><i class="ion-calculator"></i></div>
+          <div>
+            <p>Simulation of State-space representation</p>
+          </div>
+          <a href="#"></a>
+        </figcaption>
+      </figure>
+      <figure class="snip0054">
+        <img src="./Projects/javascript.png" alt="sample22" />
+        <figcaption>
+          <div><i class="ion-hammer"></i></div>
+          <div>
+            <p>Simple game: Whack A Mole</p>
+          </div>
+          <a href="WhackAMole.html"></a>
+        </figcaption>
+      </figure>
+    </div>
+   
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+      
+      <script>
+        $("figure").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+      </script>
+</body>
+</html>
